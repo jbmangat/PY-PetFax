@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <H1>Submit Fact</H1>
+        <div class="callout">
+            Submit you own facts!
+        </div>
+        <div class="facts-container">
+            <form>
+                <label for="submitter"><H2>Name</H2></label>
+                <input name="submitter" type="text"/>
+                <label for="fact"><H2>Fact</H2></label>
+                <textarea name="fact"></textarea>
+                <input type="submit" value="Submit the Fact">
+            </form>
+        </div>
+        <a href="/pets">Back</a>
+    </div>
+</body>
+</html>
